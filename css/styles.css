@@ -606,15 +606,16 @@ img {
    width: 100vw;
    
    background-color: rgba(0, 0, 0, 0.2);
-   transition-property: opacity, visability, pointer-evants;
+
+   transition-property: opacity, visibility;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-hidden {
+.backdrop.is-hidden {
    opacity: 0;
    visibility: hidden;
    pointer-events: none;
-}
+}  
 .modal {
    position: absolute;
    top: 50%;
@@ -632,7 +633,6 @@ img {
    top: 1%;
    right: 1%;
    padding: 0;
-
 
    border: none;
    background-color: transparent;
