@@ -101,6 +101,10 @@ img {
 .nav-svg {
    margin-right: 10px;
    fill: var(--second-text-color);
+
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-flex {
    display: flex;
@@ -139,6 +143,10 @@ img {
    line-height: 1.14;
    letter-spacing: 0.02em;
    color: var(--text-color);
+
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }  
 .contact {
    color: var(--second-text-color);
@@ -200,6 +208,10 @@ img {
    letter-spacing: 0.06em;
    cursor: pointer;
    color: var(--main-color);
+
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:focus,
 .hero-button:hover {
@@ -308,6 +320,10 @@ img {
    border-radius: 50%;
    align-items: center;
    justify-content: center;
+
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
@@ -319,12 +335,33 @@ img {
 }
 .social-icon {
    fill: var(--icons-color);
+
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* * PROJECTS */
 .buttons-list {
    display: flex;
    margin-bottom: 50px;
    justify-content: center;
+}
+.project-button {
+   border: none;
+   border-radius: 4px;
+   padding: 6px 22px;
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.62;
+   text-align: center;
+
+   cursor: pointer;
+   background-color: var(--theme-color);
+   color: var(--text-color);
+   transition-property: background-color, color, box-shadow;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-button:focus,
 .project-button:hover,
@@ -334,19 +371,6 @@ img {
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
    0px 1px 2px rgba(0, 0, 0, 0.08),
    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.project-button {
-   border: none;
-   border-radius: 4px;
-   padding: 6px 22px;
-
-   background-color: var(--theme-color);
-   color: var(--text-color);
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.62;
-   text-align: center;
-   cursor: pointer;
 }
 .buttons-item+.buttons-item {
    margin-left: 8px;
@@ -375,6 +399,10 @@ img {
 }
 .project-link {
    display: block;
+
+   transition-property: box-shadow;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover,
 .project-link:focus {
@@ -423,6 +451,10 @@ img {
    align-items: center;
    border: 1px solid var(--icons-color);
    border-radius: 4px;
+
+   transition-property: border;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon{
@@ -434,6 +466,10 @@ img {
 }
 .clients-icon {
    fill: var(--icons-color);
+
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* * FOOTER CONTENT * */
@@ -455,6 +491,10 @@ img {
    line-height: 1.71;
    color: rgba(255, 255, 255, 0.6);
    font-style: normal;
+   
+   transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-physical {
    color: var(--main-color);
@@ -471,6 +511,7 @@ img {
    display: flex;
 }
 .footer-social {
+   align-items: baseline;
    margin-left: 70px;
 }
 .action {
@@ -481,11 +522,11 @@ img {
    line-height: 1.14;
    margin-bottom: 20px;
 }
-.footer-social {
-   align-items: baseline;
-}
 .footer-social .social-link {
    background-color: rgba(255, 255, 255, 0.1);
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social .social-icon {
    fill: var(--main-color);
